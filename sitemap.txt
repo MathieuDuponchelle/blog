@@ -2,3 +2,4 @@ index.markdown
 	2013-06-08-Fun-with-videomixer.markdown
 	2014-01-20-Announcing-Fundraising-Campaign.markdown
 	2016-02-22-DX-Hackfest.markdown
+	2016-05-26-GST-Hackfest.markdown
