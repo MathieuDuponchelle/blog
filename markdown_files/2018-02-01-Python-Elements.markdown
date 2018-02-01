@@ -468,6 +468,9 @@ GST_PLUGIN_PATH=$GST_PLUGIN_PATH:$PWD gst-launch-1.0 -v audiotestsrc_py is-live=
 fakesink silent=false
 ```
 
+> In this context, we are not really producing data live, but simply simulating
+> by having the base class wait
+
 ## Conclusion
 
 We have implemented a simplified version of `audiotestsrc` here, the reader
