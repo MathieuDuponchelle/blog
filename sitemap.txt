@@ -3,3 +3,4 @@ index.markdown
 	2014-01-20-Announcing-Fundraising-Campaign.markdown
 	2016-02-22-DX-Hackfest.markdown
 	2016-05-26-GST-Hackfest.markdown
+	2018-02-01-Python-Elements.markdown
