@@ -214,7 +214,7 @@ class AudioTestSrc(GstBase.BaseSrc):
         self.next_sample = next_sample
         self.next_byte = next_byte
         self.accumulator += samples
-	self.accumulator %= self.info.rate / self.freq
+        self.accumulator %= self.info.rate / self.freq
 
         return (Gst.FlowReturn.OK, buf)
 
