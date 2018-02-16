@@ -50,7 +50,7 @@ This is the video most related to python plotting I could find
 At the moment of writing, the master branches from both [pygobject][pygobject-git]
 and [gstreamer][gstreamer-git] need to be installed.
 
-The python libraryies we will use for the purpose of plotting is [matplotlib],
+The python libraries we will use for the purpose of plotting are [matplotlib]
 and [numpy_ringbuffer] to help decoupling our input and output. Both are
 installable with `pip`:
 
@@ -139,7 +139,7 @@ different resolution.
 Consequently, when asked to transform the caps of the sink pad, we simply
 need to return the template of the source pad, potentially intersected
 with the optional `filter` argument (this parameter is useful for reducing
-complexity of the overall negotiation process).
+the complexity of the overall negotiation process).
 
 An example of an element where input and output are interdependent
 is [videocrop].
@@ -159,12 +159,12 @@ We do not have a preferred input format, and as a consequence we use the
 default `caps.fixate` implementation.
 
 However if for example the element is offered to output its full resolution range,
-we are going to try and pick the resolution closed to our preferred default,
+we are going to try and pick the resolution closest to our preferred default,
 this is what the calls to `fixate_field_nearest_int` achieve.
 
 This will have no effect if the field is already fixated to a specific value.
 
-If the field was set to a range not containing our preferred value, fixating
+If the field was set to a range *not* containing our preferred value, fixating
 would result in picking the allowed value closest to it, for example given
 our preferred width `640` and the allowed range `[800, 1200]`, the final value
 of the field would be `800`:
@@ -209,7 +209,7 @@ As I decided to support any sample format as the input, the most straightforward
 ```
 
 We initialize a converter based on our input format, as explained above this is
-best done in `do_set_caps`.
+best done in `do_set_caps`:
 
 ``` python
         _, info = inbuf.map(Gst.MapFlags.READ)
@@ -234,7 +234,7 @@ The initial version of this element only implemented `do_transform`, and simply
 plotted one output buffer per input buffer. This produced a kaleidoscopic effect
 and slaved the framerate to `samplerate / samplesperbuffer`.
 
-`BaseTransform` exposes a virtual method that allow producing 0 to N output
+`BaseTransform` exposes a virtual method that allows producing 0 to N output
 buffers per buffer instead, `do_generate_output`:
 
 ``` python
@@ -244,9 +244,10 @@ buffers per buffer instead, `do_generate_output`:
 ```
 
 When a new buffer is chained on the sink pad, `do_generate_output` is called
-repeatedly while it returns `Gst.FlowReturn.OK` and a buffer: thanks to that
+repeatedly as long as it returns `Gst.FlowReturn.OK` and a buffer: thanks to that
 we can fill our ringbuffer and only return a frame once we have processed
-enough new samples to reach our next time.
+enough new samples to reach our next time. Conversely we can produce multiple
+frames if the size of the input buffer warrants it.
 
 Here again, the rest of the function is made up of implementation details,
 an important point to note is that we still expose `do_transform`, as
@@ -295,3 +296,4 @@ Suggestions welcome!
 [GstAudio.AudioFormatInfo]: https://lazka.github.io/pgi-docs/GstAudio-1.0/classes/AudioFormatInfo.html
 [audacity]: https://www.audacityteam.org/
 [vispy]: http://vispy.org/
+[struct]: https://docs.python.org/3/library/struct.html
