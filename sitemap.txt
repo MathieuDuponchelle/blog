@@ -4,3 +4,4 @@ index.markdown
 	2016-02-22-DX-Hackfest.markdown
 	2016-05-26-GST-Hackfest.markdown
 	2018-02-01-Python-Elements.markdown
+	2018-02-15-Python-Elements-2.markdown

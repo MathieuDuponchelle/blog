@@ -1,10 +1,10 @@
 ---
-title: How to write GStreamer (1.0) elements in python
-short-description: "Part 1: A test audio src"
+title: How to write GStreamer (1.0) elements in python (Part I)
+short-description: "A test audio src"
 github-issue-id: 2
 ...
 
-# How to write GStreamer (1.0) elements in python
+# An audio test source
 
 While it turns out writing meaningful elements using GStreamer through
 [pygobject] was badly broken since [2014][boxed-bug], and it had never
