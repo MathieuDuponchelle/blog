@@ -13,6 +13,9 @@ anyway, these minor details shouldn't stop us from leveraging some of
 the unique and awesome packages at the disposal of the python developer
 from GStreamer, and that's what we'll do in this series of posts.
 
+Many thanks to the maintainer of pygobject, Christoph Reiter, for his
+reactiveness!
+
 ## Disclaimer
 
 Writing GStreamer elements in python is usually a terrible idea:
@@ -41,6 +44,9 @@ The obvious recommendation these days, if you do not want to deal with
 low-level concerns such as data races and memory safety, is [Rust]. More
 information can be found [here][gstreamer-rs-doc] and in
 [this series of posts][gstreamer-rs-blogposts] from Sebastian Dröge.
+
+Update: Sebastian has published a [post][rust-src] about the rust
+implementation of an audio test source too!
 
 ## Some code right off the bat
 
@@ -498,3 +504,4 @@ interesting things.
 [GstBaseSrc]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/GstBaseSrc.html
 [template-doc]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstPadTemplate.html#gst-pad-template-new
 [controllable]: https://gstreamer.freedesktop.org/documentation/application-development/advanced/dparams.html
+[rust-src]: https://coaxion.net/blog/2018/02/how-to-write-gstreamer-elements-in-rust-part-2-a-raw-audio-sine-wave-source/

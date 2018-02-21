@@ -36,7 +36,7 @@ t. ! queue ! audioconvert ! audioresample ! opusenc ! queue ! mux. \
 dec. ! video/x-raw ! videoconvert ! deinterlace ! comp.sink_1
 ```
 
-<iframe width="770" height="433" src="http://www.youtube.com/embed/o3hjosK1sRQ?feature=player_detailpage" frameborder="0"> </iframe>
+<iframe width="770" height="433" src="https://www.youtube.com/embed/o3hjosK1sRQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 This is the video most related to python plotting I could find
 <sup><small> please don't stone me</small></sup>
