@@ -6,6 +6,9 @@ github-issue-id: 5
 
 # webrtcsink, a new GStreamer element for WebRTC streaming
 
+`webrtcsink` is an all-batteries included GStreamer WebRTC producer, that tries
+its best to do The Right Thing™.
+
 Following up on the last part of my [last blog post], I have spent some time
 these past few months working on a [WebRTC sink element] to make use of the
 various mitigation techniques and congestion control mechanisms currently
@@ -70,6 +73,8 @@ reactive, it will however certainly evolve in the future as more real-life
 testing happens, more on that later.
 
 [transport-cc]: https://datatracker.ietf.org/doc/html/draft-holmer-rmcat-transport-wide-cc-extensions-01
+[implemented]: https://gitlab.freedesktop.org/ystreet/gst-examples/-/commits/bw-management
+[Google Congestion Control algorithm]: https://datatracker.ietf.org/doc/html/draft-ietf-rmcat-gcc-02
 
 ## Packet loss mitigation techniques
 
