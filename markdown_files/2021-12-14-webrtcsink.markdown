@@ -155,4 +155,8 @@ This new element was made possible in part thanks to the contributions from
 
 * The good people at Pexip (RTP stack, transport-cc)
 
+* [Sequence] for sponsoring this work
+
 This is not an exhaustive list!
+
+[Sequence]: https://sequence.film/
