@@ -1,6 +1,7 @@
 ---
 title: Back from the DX hackfest
 short-description: My experience at the developer experience hackfest
+feedgen-published: 2016-02-22
 ...
 
 ## Back from the DX hackfest

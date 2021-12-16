@@ -1,6 +1,7 @@
 ---
 title: Announcing pitivi's fundraising campaign !
 short-description: We are launching a crowdfunding campaign, and you, yes *you* can help !
+feedgen-published: 2014-01-20
 ...
 
 # Our team

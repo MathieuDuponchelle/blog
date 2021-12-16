@@ -2,6 +2,7 @@
 title: SMPTE 2022-1 2D Forward Error Correction in GStreamer
 short-description: "New FEC elements in GStreamer"
 github-issue-id: 4
+feedgen-published: 2020-10-09
 ...
 
 # SMPTE 2022-1 2D Forward Error Correction in GStreamer

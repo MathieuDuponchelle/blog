@@ -2,6 +2,7 @@
 title: How to write GStreamer (1.0) elements in python (Part I)
 short-description: "A test audio src"
 github-issue-id: 2
+feedgen-published: 2018-02-01
 ...
 
 # An audio test source

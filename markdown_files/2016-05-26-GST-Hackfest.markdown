@@ -1,6 +1,7 @@
 ---
 title: Back from the GST hackfest
 short-description: My experience at the GStreamer hackfest
+feedgen-published: 2016-05-26
 ...
 
 # Back from the GST hackfest

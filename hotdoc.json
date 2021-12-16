@@ -6,5 +6,7 @@
 	"sitemap": "sitemap.txt",
 	"comment-on-github-repository": "MathieuDuponchelle/MathieuDuponchelle.github.io",
 	"git_upload_repository": "git@github.com:MathieuDuponchelle/MathieuDuponchelle.github.io.git",
-	"include_paths": ["examples"]
+	"include_paths": ["examples"],
+  "feedgen_activate": true,
+  "feedgen_base_url": "https://mathieuduponchelle.github.io/"
 }

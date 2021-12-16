@@ -1,3 +1,7 @@
+---
+add-to-feedgen: false
+...
+
 # Welcome to my (very experimental) blog
 
 ## Why?

@@ -1,6 +1,7 @@
 ---
 title: Fun with videomixer
 short-description: using gstreamer-editing-services to make the world a better place.
+feedgen-published: 2013-06-08
 ...
 
 # Introduction

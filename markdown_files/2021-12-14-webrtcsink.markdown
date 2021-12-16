@@ -2,6 +2,7 @@
 title: webrtcsink
 short-description: "A new GStreamer element for WebRTC streaming"
 github-issue-id: 5
+feedgen-published: 2021-12-15
 ...
 
 # webrtcsink, a new GStreamer element for WebRTC streaming

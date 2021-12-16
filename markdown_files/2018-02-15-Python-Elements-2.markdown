@@ -2,6 +2,7 @@
 title: How to write GStreamer (1.0) elements in python (Part II)
 short-description: "An audio plotter"
 github-issue-id: 3
+feedgen-published: 2018-02-15
 ...
 
 # Implementing an audio plotter
