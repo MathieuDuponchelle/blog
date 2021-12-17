@@ -7,3 +7,4 @@ index.markdown
         2018-02-15-Python-Elements-2.markdown
         2020-10-09-SMPTE-2022-1-2D-Forward-Error-Correction-in-GStreamer.markdown
         2021-12-14-webrtcsink.markdown
+        2021-12-17-awstranscriber.markdown
